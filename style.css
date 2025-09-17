@@ -329,10 +329,13 @@ body {
 @media (max-width: 768px) {
     
     .cover-header{
-        height: 20rem;
+        height: 10rem;
+        background-color: #374781;
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
-        background-position: 60% 30%;
+        /* background-position: 60% 30%; */
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .mission-statement p {
