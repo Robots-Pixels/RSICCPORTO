@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    /* font-family: "Hepta Slab", serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    line-height: 1.6;
+    color: #fff;
+    /* background-color: äff; */
+    background: linear-gradient(180deg, #43407a 0%, #896594 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.hero-section {
+    text-align: center;
+    padding: 2rem 0px;
+    color: white;
+}
+
+.cover-header{
+    height: 25rem;
+    background: url("./cover.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    position: relative;
+}
+
+/* .logo-container{
+    margin: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+} */
+
+.logo-wraper {
+    position: absolute;
+    top: 2rem;
+    left: 10%;
+    height: 5rem;
+    aspect-ratio: 1/1;
+    /* border: 2px solid rgba(255, 255, 255, 0.3);   */
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+    width:  100%;
+    gap: 0.5rem;
+}
+
+.small-logo{
+    width: 6rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mission-statement {
+    width: 100%;
+}
+
+.mission-statement p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Content Styles */
+
+.content {
+    background: #dfe0df;
+    border-radius: 30px;
+    padding: 60px 40px;
+    margin: 2rem 0;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-section {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.social-section h2 {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.social-description {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    min-width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.social-link:hover::before {
+    left: 100%;
+}
+
+.facebook {
+    background: linear-gradient(135deg, #505a7d, #374781);
+    box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
+}
+
+.facebook:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(24, 119, 242, 0.4);
+}
+
+.whatsapp {
+    background: linear-gradient(135deg, #599046, #468b2e);
+    box-shadow: 0 8px 25px #7bbd65;
+}
+
+.whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #7bbd65;
+}
+
+.youtube {
+    background: linear-gradient(135deg, #f1837b, #e65247);
+    box-shadow: 0 8px 25px #d1706a;
+}
+
+.youtube:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #d1706a;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.social-content {
+    flex: 1;
+    text-align: left;
+}
+
+.social-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.social-content p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.social-arrow {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-arrow {
+    transform: translateX(5px);
+}
+
+/* Info Section */
+.info-section {
+    margin-top: 60px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #fff5ff, #fcd4ff);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #c0857a, #9f728b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.footer-motto {
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .cover-header{
+        height: 20rem;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        background-position: 60% 30%;
+    }
+
+    .mission-statement p {
+        font-size: 0.9rem;
+    }
+
+    .logo-wraper{
+        left: 8%;
+        top: 2.1rem;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+        line-height: normal;
+    }
+    
+    .content {
+        padding: 40px 20px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .social-link {
+        min-width: 280px;
+        padding: 20px 25px;
+    }
+    
+    .social-section h2 {
+        font-size: 2rem;
+    }
+
+    .small-logo{
+        display: flex;
+    }
+    
+    .logo-container{
+        display: none;
+    }
+
+    .mission-statement p {
+        color: #fff;
+        line-height: normal;
+        font-size: 1.1rem;
+        text-align: initial;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
