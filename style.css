@@ -53,7 +53,7 @@ body {
 .logo-wraper {
     position: absolute;
     top: 2rem;
-    left: 10%;
+    left: 7%;
     height: 5rem;
     aspect-ratio: 1/1;
     /* border: 2px solid rgba(255, 255, 255, 0.3);   */
@@ -326,21 +326,17 @@ body {
 
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     
     .cover-header{
-        height: 10rem;
+        height: 18rem;
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
         /* background-position: 60% 30%; */
         background-size: contain;
         background-repeat: no-repeat;
     }
-
-    .mission-statement p {
-        font-size: 0.9rem;
-    }
-
     .logo-wraper{
         left: 8%;
         top: 2.1rem;
@@ -389,7 +385,7 @@ body {
     .mission-statement p {
         color: #fff;
         line-height: normal;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         text-align: initial;
     }
     
@@ -397,4 +393,14 @@ body {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+}
+
+@media (max-width: 425px) {
+     .cover-header{
+        height: 10rem;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        /* background-position: 60% 30%; */
+        background-size: cover;
+    }   
 }
